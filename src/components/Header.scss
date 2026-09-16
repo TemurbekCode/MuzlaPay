@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 20px 24px;
+  max-width: 520px;
+  margin: 0 auto;
+
+  &__mark {
+    width: 26px;
+    height: 26px;
+
+    svg {
+      display: block;
+      animation: wobble 3.6s ease-in-out infinite;
+      transform-origin: 50% 60%;
+    }
+  }
+
+  &__brand {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+  }
+}
+
+@keyframes wobble {
+  0%,
+  100% {
+    transform: rotate(-9deg);
+  }
+  50% {
+    transform: rotate(9deg);
+  }
+}
