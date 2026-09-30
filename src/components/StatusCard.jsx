@@ -4,7 +4,7 @@ function fmt(n) {
   return Number(n).toLocaleString("fr-FR").replaceAll(",", " ") + " so'm";
 }
 
-export default function StatusCard({ listing, onClose, onConfirm }) {
+export default function StatusCard({ txn, onClose, onConfirm }) {
   return (
     <div className="card">
       <div className="orb-wrap">
@@ -15,7 +15,7 @@ export default function StatusCard({ listing, onClose, onConfirm }) {
 
       <div className="status-title">To'lov qabul qilindi ✅</div>
       <div className="status-sub">
-        {fmt(listing.price)} xavfsiz saqlanmoqda. Sotuvchi tovarni jo'natgach, telefon
+        {fmt(txn.amount)} xavfsiz saqlanmoqda. Sotuvchi tovarni jo'natgach, telefon
         raqamingizga <b style={{ color: "var(--frost)" }}>SMS yuboramiz</b> — shu havola orqali
         qaytib, bir bosishda tasdiqlaysiz. Hozir xavotirsiz chiqib ketishingiz mumkin.
       </div>

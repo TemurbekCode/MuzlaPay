@@ -4,8 +4,8 @@ function fmt(n) {
   return Number(n).toLocaleString("fr-FR").replaceAll(",", " ") + " so'm";
 }
 
-export default function DoneCard({ listing, commission }) {
-  const fee = commission ?? Math.round(listing.price * 0.02);
+export default function DoneCard({ txn, commission }) {
+  const fee = commission ?? Math.round(txn.amount * 0.02);
 
   return (
     <div className="card">
@@ -20,16 +20,12 @@ export default function DoneCard({ listing, commission }) {
 
       <div className="receipt">
         <div className="receipt-row">
-          <span>Mahsulot</span>
-          <b>{listing.name}</b>
-        </div>
-        <div className="receipt-row">
           <span>Xizmat haqi (2%)</span>
           <b>{fmt(fee)}</b>
         </div>
         <div className="receipt-row receipt-row--total">
           <span>Jami to'landi</span>
-          <b>{fmt(listing.price)}</b>
+          <b>{fmt(txn.amount)}</b>
         </div>
       </div>
     </div>
