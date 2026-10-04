@@ -9,7 +9,7 @@ MuzlaPay is a frontend checkout app built with React and Vite for product-based 
 - Product checkout flow driven by product ID
 - Escrow-style payment status handling
 - Secure sale flow for buyer and seller
-- Order/status cards for purchase states
+- Order and status cards for purchase states
 - Clean UI built with React + SCSS
 - Easy backend integration via configurable `VITE_API_BASE`
 - Suitable for Telegram storefront and P2P marketplace scenarios
@@ -20,6 +20,24 @@ MuzlaPay is a frontend checkout app built with React and Vite for product-based 
 - Styling: SCSS modular components
 - API: Backend service via configurable base URL
 - Deployment: Static frontend served from build output
+
+## Security Note
+
+⚠️ This repository contains the frontend only.
+
+Real payment processing, escrow logic, transaction verification, and sensitive payment security must be handled on the backend.
+
+For production deployment, ensure:
+
+- HTTPS is enabled everywhere
+- All payment data is validated server-side
+- Authentication and authorization are enforced in the backend
+- Sensitive user data is not stored in the frontend
+- Escrow logic is protected against manipulation or bypass
+- A trusted payment provider is used for actual financial processing
+- Phone numbers, transaction data, and logs are protected against leaks
+
+This frontend should never be treated as the complete payment system on its own.
 
 ## Project Structure
 
@@ -48,7 +66,9 @@ MuzlaPay/
 ├── .gitignore
 ├── README.md
 ├── LICENSE
-└── .env.example
+├── .env.example
+└── docs/
+    └── screenshots/
 ```
 
 ## Prerequisites
