@@ -1,0 +1,71 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="720" fill="#0F1419"/>
+  <rect x="0" y="0" width="1280" height="80" fill="#1A1F2E"/>
+  <rect x="30" y="16" width="200" height="48" rx="12" fill="#2D3E52"/>
+  <text x="62" y="48" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="24" font-weight="700">MuzlaPay</text>
+  <text x="1000" y="48" fill="#8892A8" font-family="Arial, sans-serif" font-size="18">Admin Panel</text>
+
+  <rect x="0" y="80" width="300" height="640" fill="#1B2332"/>
+  <rect x="20" y="110" width="260" height="50" rx="10" fill="#4CAF50"/>
+  <text x="50" y="140" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="16" font-weight="700">Dashboard</text>
+  
+  <rect x="20" y="180" width="260" height="40" rx="8" fill="#2A3A4F"/>
+  <text x="50" y="207" fill="#B0B8C5" font-family="Arial, sans-serif" font-size="16">Transactions</text>
+  
+  <rect x="20" y="235" width="260" height="40" rx="8" fill="#2A3A4F"/>
+  <text x="50" y="262" fill="#B0B8C5" font-family="Arial, sans-serif" font-size="16">Disputes</text>
+  
+  <rect x="20" y="290" width="260" height="40" rx="8" fill="#2A3A4F"/>
+  <text x="50" y="317" fill="#B0B8C5" font-family="Arial, sans-serif" font-size="16">Users</text>
+
+  <rect x="20" y="345" width="260" height="40" rx="8" fill="#2A3A4F"/>
+  <text x="50" y="372" fill="#B0B8C5" font-family="Arial, sans-serif" font-size="16">Reports</text>
+
+  <rect x="320" y="100" width="940" height="560" rx="20" fill="#1B2332"/>
+  
+  <text x="360" y="145" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="24" font-weight="700">Recent Transactions</text>
+
+  <rect x="360" y="175" width="900" height="60" rx="12" fill="#2A3A4F"/>
+  <text x="380" y="195" fill="#8892A8" font-family="Arial, sans-serif" font-size="12">TXN ID</text>
+  <text x="380" y="225" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="14" font-weight="700">TXN-2024-891523</text>
+  
+  <text x="650" y="195" fill="#8892A8" font-family="Arial, sans-serif" font-size="12">AMOUNT</text>
+  <text x="650" y="225" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="14" font-weight="700">$299.99</text>
+  
+  <text x="820" y="195" fill="#8892A8" font-family="Arial, sans-serif" font-size="12">STATUS</text>
+  <text x="820" y="225" fill="#4CAF50" font-family="Arial, sans-serif" font-size="14" font-weight="700">Completed</text>
+  
+  <text x="1000" y="195" fill="#8892A8" font-family="Arial, sans-serif" font-size="12">DATE</text>
+  <text x="1000" y="225" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="14">Oct 4, 2:45 PM</text>
+
+  <rect x="360" y="255" width="900" height="60" rx="12" fill="#2A3A4F" opacity="0.7"/>
+  <text x="380" y="275" fill="#8892A8" font-family="Arial, sans-serif" font-size="12">TXN ID</text>
+  <text x="380" y="305" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="14" font-weight="700">TXN-2024-891520</text>
+  
+  <text x="650" y="275" fill="#8892A8" font-family="Arial, sans-serif" font-size="12">AMOUNT</text>
+  <text x="650" y="305" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="14" font-weight="700">$149.99</text>
+  
+  <text x="820" y="275" fill="#8892A8" font-family="Arial, sans-serif" font-size="12">STATUS</text>
+  <text x="820" y="305" fill="#FFC107" font-family="Arial, sans-serif" font-size="14" font-weight="700">Pending</text>
+  
+  <text x="1000" y="275" fill="#8892A8" font-family="Arial, sans-serif" font-size="12">DATE</text>
+  <text x="1000" y="305" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="14">Oct 4, 1:20 PM</text>
+
+  <rect x="360" y="335" width="900" height="60" rx="12" fill="#2A3A4F" opacity="0.7"/>
+  <text x="380" y="355" fill="#8892A8" font-family="Arial, sans-serif" font-size="12">TXN ID</text>
+  <text x="380" y="385" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="14" font-weight="700">TXN-2024-891519</text>
+  
+  <text x="650" y="355" fill="#8892A8" font-family="Arial, sans-serif" font-size="12">AMOUNT</text>
+  <text x="650" y="385" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="14" font-weight="700">$75.50</text>
+  
+  <text x="820" y="355" fill="#8892A8" font-family="Arial, sans-serif" font-size="12">STATUS</text>
+  <text x="820" y="385" fill="#F44336" font-family="Arial, sans-serif" font-size="14" font-weight="700">Disputed</text>
+  
+  <text x="1000" y="355" fill="#8892A8" font-family="Arial, sans-serif" font-size="12">DATE</text>
+  <text x="1000" y="385" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="14">Oct 4, 12:10 PM</text>
+
+  <rect x="360" y="415" width="900" height="120" rx="12" fill="#1E2A38" stroke="#2A3842"/>
+  <text x="380" y="445" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="16" font-weight="700">Total Volume</text>
+  <text x="380" y="480" fill="#4CAF50" font-family="Arial, sans-serif" font-size="32" font-weight="700">$18,547.89</text>
+  <text x="380" y="510" fill="#8892A8" font-family="Arial, sans-serif" font-size="14">This month (287 transactions)</text>
+</svg>
