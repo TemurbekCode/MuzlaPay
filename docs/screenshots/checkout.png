@@ -1,0 +1,40 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="720" fill="#0F1419"/>
+  <rect x="0" y="0" width="1280" height="80" fill="#1A1F2E"/>
+  <rect x="30" y="16" width="200" height="48" rx="12" fill="#2D3E52"/>
+  <text x="62" y="48" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="24" font-weight="700">MuzlaPay</text>
+  <text x="1000" y="48" fill="#8892A8" font-family="Arial, sans-serif" font-size="18">Checkout</text>
+
+  <rect x="0" y="80" width="1280" height="640" fill="#0A0E17"/>
+  <rect x="80" y="120" width="1120" height="540" rx="20" fill="#1B2332"/>
+  
+  <text x="120" y="165" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="26" font-weight="700">Complete Your Order</text>
+
+  <rect x="120" y="200" width="1040" height="100" rx="16" fill="#2A3A4F" stroke="#3D4A5F"/>
+  <rect x="140" y="220" width="60" height="60" rx="12" fill="#4CAF50"/>
+  <text x="153" y="255" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="40" font-weight="700">✓</text>
+  <text x="220" y="235" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="18" font-weight="700">Payment Authorized</text>
+  <text x="220" y="260" fill="#B0B8C5" font-family="Arial, sans-serif" font-size="16">Transaction ID: TXN-2024-891523</text>
+  <text x="220" y="285" fill="#8892A8" font-family="Arial, sans-serif" font-size="14">Amount: $299.99 USD</text>
+
+  <rect x="120" y="330" width="1040" height="280" rx="16" fill="#141B27" stroke="#2A3842"/>
+  <text x="150" y="370" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="20" font-weight="700">Order Confirmation</text>
+
+  <rect x="150" y="400" width="480" height="90" rx="12" fill="#1E2A38" stroke="#2A3842"/>
+  <text x="170" y="425" fill="#8892A8" font-family="Arial, sans-serif" font-size="14">Item</text>
+  <text x="170" y="455" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="16" font-weight="700">Premium Product Bundle</text>
+  <text x="170" y="480" fill="#7A8A9E" font-family="Arial, sans-serif" font-size="14">Includes 3 items + support</text>
+
+  <rect x="670" y="400" width="480" height="90" rx="12" fill="#1E2A38" stroke="#2A3842"/>
+  <text x="690" y="425" fill="#8892A8" font-family="Arial, sans-serif" font-size="14">Total Amount</text>
+  <text x="690" y="465" fill="#4CAF50" font-family="Arial, sans-serif" font-size="32" font-weight="700">$299.99</text>
+
+  <rect x="150" y="510" width="480" height="80" rx="12" fill="#1E2A38" stroke="#2A3842"/>
+  <text x="170" y="535" fill="#8892A8" font-family="Arial, sans-serif" font-size="14">Seller</text>
+  <text x="170" y="565" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="16" font-weight="700">TechStore Official</text>
+  <text x="170" y="585" fill="#7A8A9E" font-family="Arial, sans-serif" font-size="12">Rating: 4.8/5 (1,243 reviews)</text>
+
+  <rect x="670" y="510" width="480" height="80" rx="12" fill="#1E2A38" stroke="#2A3842"/>
+  <text x="690" y="535" fill="#8892A8" font-family="Arial, sans-serif" font-size="14">Estimated Delivery</text>
+  <text x="690" y="570" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="18" font-weight="700">2-3 Business Days</text>
+</svg>
