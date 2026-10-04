@@ -1,16 +1,35 @@
-# MuzlaPay — React (Vite + SCSS) checkout ilovasi
+# MuzlaPay
 
-## Bu fayllarni qayerga qo'yish kerak
+Secure escrow checkout platform for Telegram and online marketplace transactions.
 
-Sening `MuzlaPay` Vite loyihangda (skrinshotdagi papka):
+MuzlaPay is a frontend checkout app built with React and Vite for product-based sales where payment is held securely until the buyer confirms delivery. It is designed for marketplaces, Telegram stores, and similar sales flows where trust between buyer and seller is essential.
 
-```
+## Features
+
+- Product checkout flow driven by product ID
+- Escrow-style payment status handling
+- Secure sale flow for buyer and seller
+- Order/status cards for purchase states
+- Clean UI built with React + SCSS
+- Easy backend integration via configurable `VITE_API_BASE`
+- Suitable for Telegram storefront and P2P marketplace scenarios
+
+## Tech Stack
+
+- Frontend: React, Vite, JavaScript, SCSS
+- Styling: SCSS modular components
+- API: Backend service via configurable base URL
+- Deployment: Static frontend served from build output
+
+## Project Structure
+
+```text
 MuzlaPay/
-├── index.html          ← shu fayl bilan almashtir
+├── index.html
 ├── src/
-│   ├── main.jsx         ← shu fayl bilan almashtir
-│   ├── App.jsx           ← shu fayl bilan almashtir (yoki qo'sh)
-│   ├── api.js             ← yangi, qo'sh
+│   ├── main.jsx
+│   ├── App.jsx
+│   ├── api.js
 │   ├── styles/
 │   │   ├── _variables.scss
 │   │   └── global.scss
@@ -24,61 +43,142 @@ MuzlaPay/
 │       ├── DoneCard.jsx
 │       ├── EmptyState.jsx
 │       └── Toast.jsx
+├── package.json
+├── vite.config.js
+├── .gitignore
+├── README.md
+├── LICENSE
+└── .env.example
 ```
 
-`App.css` yoki standart Vite shabloni qoldirgan boshqa eski fayllarni (masalan `App.css`,
-namunaviy logo rasmlar) xavfsiz o'chirib tashlashing mumkin — ular endi ishlatilmaydi.
+## Prerequisites
 
-## O'rnatish
+- Node.js 18+
+- npm or yarn
+- Backend service running on `http://127.0.0.1:8000` during local development
 
-SCSS uchun bitta qo'shimcha paket kerak:
+## Installation
+
+Install the frontend dependencies:
+
+```bash
+npm install
+```
+
+If SCSS is not already installed in your environment, run:
 
 ```bash
 npm install -D sass
 ```
 
-Boshqa hech narsa o'rnatish shart emas — React, Vite allaqachon bor.
+## Local Development
 
-## Ishga tushirish (test uchun, backend'dan alohida)
+Start the app in development mode:
 
 ```bash
 npm run dev
 ```
 
-Bu `http://localhost:5173` da ochiladi. Lekin **backend (`uvicorn Main:app --reload`)
-alohida terminalda ishlab turishi shart**, chunki `api.js` unga so'rov yuboradi
-(`http://127.0.0.1:8000`).
+The app runs at:
 
-Sinash uchun brauzerda: `http://localhost:5173/p/<mahsulot-id>` (botdan olingan ID bilan).
-
-## Backend bilan birlashtirish (production uchun)
-
-Hozircha ikkita server alohida ishlaydi (5173 — React, 8000 — backend). Buni birlashtirish uchun:
-
-1. React'ni build qil:
-   ```bash
-   npm run build
-   ```
-   Bu `dist/` papkasini yaratadi.
-
-2. `dist/` papkasining **ichidagi barcha fayllarni** backend loyihangdagi `static/` papkasiga
-   ko'chir (eski `checkout.html`ni o'chirib, buning o'rniga).
-
-3. `Main.py` faylida bitta qatorni o'zgartir — `serve_checkout` funksiyasida:
-   ```python
-   return FileResponse("static/checkout.html")
-   ```
-   buni shunga almashtir:
-   ```python
-   return FileResponse("static/index.html")
-   ```
-
-4. Backendni qayta ishga tushir — endi `http://127.0.0.1:8000/p/<id>` React ilovasini ko'rsatadi.
-
-## VITE_API_BASE haqida
-
-Agar kelajakda backend boshqa domenga (masalan `api.muzlapay.uz`) ko'chsa, `api.js`dagi
-manzilni qo'lda o'zgartirish shart emas — loyiha ildizida `.env` fayl yaratib, shuni yoz:
+```text
+http://localhost:5173
 ```
+
+During local testing, the backend should run separately, for example:
+
+```bash
+uvicorn Main:app --reload
+```
+
+Then open a product page in the browser using the product ID:
+
+```text
+http://localhost:5173/p/<product-id>
+```
+
+## Environment Configuration
+
+If the backend moves to another domain, create a `.env` file in the project root and set:
+
+```env
 VITE_API_BASE=https://api.muzlapay.uz
 ```
+
+Then the app will use that value instead of a hardcoded API URL.
+
+## Production Build
+
+Build the frontend for production:
+
+```bash
+npm run build
+```
+
+This creates a `dist/` folder.
+
+To serve the app through the backend in production:
+
+1. Copy all files from `dist/` into your backend project's `static/` folder.
+2. Replace the existing checkout page route with the built app entry file.
+3. Update the backend route logic from:
+
+```python
+return FileResponse("static/checkout.html")
+```
+
+to:
+
+```python
+return FileResponse("static/index.html")
+```
+
+4. Restart the backend.
+
+After that, the app is served through the backend and accessible through a product URL such as:
+
+```text
+http://127.0.0.1:8000/p/<id>
+```
+
+## How It Works
+
+1. The user opens a checkout page using a product ID.
+2. The frontend fetches the product details from the backend.
+3. The user proceeds with the purchase flow.
+4. Payment is held in escrow until the product is confirmed as delivered.
+5. The order status is shown to both seller and buyer.
+
+## Screenshots
+
+Add screenshots to the repository under a `docs/screenshots/` folder and reference them here.
+
+```markdown
+![Product Page](docs/screenshots/product-page.png)
+![Checkout Flow](docs/screenshots/checkout-flow.png)
+![Status Page](docs/screenshots/status-page.png)
+```
+
+## Project Goals
+
+This project was built to provide a safer buying and selling experience for online marketplace transactions, especially in cases where users prefer to avoid direct trust-based handovers.
+
+## Contributing
+
+Issues and pull requests are welcome.
+
+If you find a bug or want to suggest an improvement:
+
+1. Open an issue
+2. Describe the problem or feature request
+3. Include screenshots when possible
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Author
+
+Temur Alisherov
+
+GitHub: [@TemurbekCode](https://github.com/TemurbekCode)
